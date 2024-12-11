@@ -1,90 +1,48 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight } from 'lucide-react';
+import React from 'react';
 
 const Hero = () => {
-  const videoRef = useRef<HTMLVideoElement | null>(null); // Set the correct type for videoRef
-  const [midpoint, setMidpoint] = useState(0);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  // Set the midpoint when the video's metadata loads
-  const handleLoadedMetadata = () => {
-    if (videoRef.current) {
-      setMidpoint(videoRef.current.duration / 2);
-    }
-  };
-
-  // Start from the midpoint when the video ends
-  const handleVideoEnd = () => {
-    if (videoRef.current) {
-      videoRef.current.currentTime = midpoint;
-      videoRef.current.play();
-    }
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50); // Change based on scroll position
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <div>
-      {/* First Fixed Background Video Section */}
-      <div className="relative min-h-screen flex items-center justify-center sticky overflow-hidden">
-        <video
-          ref={videoRef}
-          src="/vid123.mp4"
-          className="absolute inset-0 w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-          onLoadedMetadata={handleLoadedMetadata} // Set midpoint when video metadata loads
-          onEnded={handleVideoEnd} // Trigger on video end
-        ></video>
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <img
+        src="/home.png"
+        className="absolute inset-0 w-full h-full object-cover brightness-[40%]"
+        alt="Mindbend 2025 background"
+      />
 
-        {/* Content on top of the video */}
-        <div
-          className={`relative z-10 text-center px-4 sm:px-6 lg:px-8 transition-all duration-500 ${
-            isScrolled ? 'opacity-0' : 'opacity-100'
-          }`}
-        >
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6">
-            <span className="block">MINDBEND</span>
-            <span className="block text-2xl sm:text-3xl lg:text-4xl mt-2 text-white">
-              NIT Surat's Technical Festival
-            </span>
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-6xl sm:text-7xl lg:text-9xl leading-tight font-bayon font-bold">
+            <div className="inline-block animate-text-flow bg-[linear-gradient(110deg,#64e1ff,45%,#4ae0c0,55%,#64e1ff)] bg-[length:200%_100%] bg-clip-text text-transparent">
+              WELCOME TO
+            </div>
           </h1>
-          <p className="mt-6 text-xl sm:text-2xl text-white max-w-3xl mx-auto">
-            Where Innovation Meets Excellence in Technology
-          </p>
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="px-8 py-3 bg-purple-600 text-white rounded-full font-semibold hover:bg-purple-700 transition-colors flex items-center gap-2">
-              Register Now <ArrowRight size={20} />
-            </button>
-            <button className="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition-colors">
-              Learn More
-            </button>
-          </div>
+          <h1 className="text-6xl sm:text-7xl lg:text-9xl leading-tight font-bayon font-bold">
+            <div className="inline-block animate-text-flow bg-[linear-gradient(110deg,#64e1ff,45%,#4ae0c0,55%,#64e1ff)] bg-[length:200%_100%] bg-clip-text text-transparent">
+              MINDBEND 2025
+            </div>
+          </h1>
         </div>
       </div>
 
-      {/* Additional sections */}
-      {/* Second Section */}
-      {/* 
-      <div className="relative min-h-screen bg-blue-600 flex items-center justify-center text-white sticky top-0 z-20 transition-all duration-500">
-        <h2 className="text-4xl font-bold">New Section Coming Over the Video</h2>
-      </div>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
 
-      Third Section
-      <div className="relative min-h-screen bg-red-600 flex items-center justify-center text-white sticky top-0 z-30 transition-all duration-500">
-        <h2 className="text-4xl font-bold">Next Section Coming Over the Previous One</h2>
-      </div> 
-      */}
+        .font-bayon {
+          font-family: 'Bayon', sans-serif;
+        }
+
+        @keyframes textFlow {
+          0% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        .animate-text-flow {
+          animation: textFlow 4s linear infinite;
+        }
+      `}</style>
     </div>
   );
 };
 
 export default Hero;
+
+
