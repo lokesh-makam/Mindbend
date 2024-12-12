@@ -46,6 +46,23 @@ section.visible {
 .timeline-content {
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* Hero Section Background */
+.hero-bg {
+  background: url('/aboutmb.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* Fixed Background for Other Sections */
+.fixed-bg {
+  background: url('/aboutmb.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
 
 .timeline-item.visible .timeline-content {
   opacity: 1 !important;

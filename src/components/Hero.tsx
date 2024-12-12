@@ -1,28 +1,8 @@
+import { ArrowRight } from 'lucide-react';
 import React from 'react';
+import { useRef,useState,useEffect } from 'react';
 
 const Hero = () => {
-<<<<<<< HEAD
-  return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <img
-        src="/home.png"
-        className="absolute inset-0 w-full h-full object-cover brightness-[40%]"
-        alt="Mindbend 2025 background"
-      />
-
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <h1 className="text-6xl sm:text-7xl lg:text-9xl leading-tight font-bayon font-bold">
-            <div className="inline-block animate-text-flow bg-[linear-gradient(110deg,#64e1ff,45%,#4ae0c0,55%,#64e1ff)] bg-[length:200%_100%] bg-clip-text text-transparent">
-              WELCOME TO
-            </div>
-          </h1>
-          <h1 className="text-6xl sm:text-7xl lg:text-9xl leading-tight font-bayon font-bold">
-            <div className="inline-block animate-text-flow bg-[linear-gradient(110deg,#64e1ff,45%,#4ae0c0,55%,#64e1ff)] bg-[length:200%_100%] bg-clip-text text-transparent">
-              MINDBEND 2025
-            </div>
-          </h1>
-=======
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [midpoint, setMidpoint] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -102,20 +82,10 @@ const Hero = () => {
               Learn More
             </button>
           </div>
->>>>>>> 39fded7318ae02e332f20f973d93a1a66ffe78ef
         </div>
       </div>
 
       <style>{`
-<<<<<<< HEAD
-        @import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
-
-        .font-bayon {
-          font-family: 'Bayon', sans-serif;
-        }
-
-=======
->>>>>>> 39fded7318ae02e332f20f973d93a1a66ffe78ef
         @keyframes textFlow {
           0% { background-position: 100% 50%; }
           100% { background-position: 0% 50%; }
@@ -123,8 +93,6 @@ const Hero = () => {
         .animate-text-flow {
           animation: textFlow 4s linear infinite;
         }
-<<<<<<< HEAD
-=======
         @keyframes pulseGlow {
           0%, 100% { box-shadow: 0 0 5px 2px rgba(100, 225, 255, 0.3), 0 0 10px 4px rgba(74, 224, 192, 0.2); }
           50% { box-shadow: 0 0 10px 5px rgba(100, 225, 255, 0.5), 0 0 20px 10px rgba(74, 224, 192, 0.3); }
@@ -132,16 +100,9 @@ const Hero = () => {
         .animate-pulse-glow {
           animation: pulseGlow 2s ease-in-out infinite;
         }
->>>>>>> 39fded7318ae02e332f20f973d93a1a66ffe78ef
       `}</style>
     </div>
   );
 };
 
-<<<<<<< HEAD
 export default Hero;
-
-
-=======
-export default Hero;
->>>>>>> 39fded7318ae02e332f20f973d93a1a66ffe78ef

@@ -11,15 +11,11 @@ const PastLectures: React.FC = () => {
   return (
     <div className="min-h-screen relative flex flex-col items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="/aboutmb.jpg"
-          alt="Past Lectures Background"
-          className="w-full h-full object-cover"
-        />
-      </div>
+      
+                <div className="absolute inset-0 bg-black opacity-75"></div>
 
       {/* Content Container */}
+      
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 py-8 flex flex-col items-center">
         {/* Past Lectures Text */}
         <div className="mb-16 w-full flex justify-center">
@@ -64,7 +60,7 @@ const PastLectures: React.FC = () => {
       </div>
 
       {/* Optional overlay for better text visibility */}
-      <div className="absolute inset-0 bg-black/30 z-[1]" />
+      {/* <div className="absolute inset-0 bg-black/30 z-[1]" /> */}
     </div>
   );
 };
