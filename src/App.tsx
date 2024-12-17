@@ -5,12 +5,10 @@ import Hero from './components/Hero';
 import AboutMB from './components/AboutMB';
 import PastLectures from './components/PastLectures';
 import Workshops from './components/Workshop';
-import ScrollSection from './components/ScrollSection';
-
+import Footer from './components/Footer';
 function App() {
   return (
     <Router>
-      {/* Hero Section */}
       <div className="hero-bg">
         <Navbar />
         <Routes>
@@ -18,18 +16,12 @@ function App() {
         </Routes>
       </div>
 
-      {/* Scrollable Sections with Fixed Background */}
       <div className="fixed-bg">
-        {/* <ScrollSection id="aboutmb" className="scroll-section"> */}
           <AboutMB />
-        {/* </ScrollSection> */}
-        {/* <ScrollSection id="workshops" className="scroll-section"> */}
           <Workshops />
-        {/* </ScrollSection> */}
-        {/* <ScrollSection id="pastlectures" className="scroll-section"> */}
           <PastLectures />
-        {/* </ScrollSection> */}
       </div>
+      <Footer/>
     </Router>
   );
 }
