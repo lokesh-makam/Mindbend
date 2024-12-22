@@ -2,11 +2,15 @@ import React from 'react';
 
 const PastLectures: React.FC = () => {
   const boxImages = [
-    '/vectormain.png',
-    '/vectormain.png',
-    '/vectormain.png',
-    '/vectormain.png',
+    '/past_lec1.png',
+    '/past_lec2.png',
+    '/past_lec3.png',
+    '/past_lec4.png',
   ];
+
+  const handleExploreClick = () => {
+    window.location.href = 'https://mindbendsvnit.in/guestlecture';
+  };
 
   return (
     <div className="min-h-screen relative flex flex-col items-center justify-center overflow-hidden">
@@ -26,7 +30,7 @@ const PastLectures: React.FC = () => {
             <span
               className="absolute inset-0 flex items-center justify-center text-green-300 text-xl sm:text-2xl md:text-3xl font-extrabold font-blackops thin-glow"
               style={{
-                WebkitTextStroke: '0.2px rgba(0, 100, 0)', // Thin green stroke
+                WebkitTextStroke: '0.2px rgba(0, 100, 0)',
               }}
             >
               Past Lectures
@@ -47,24 +51,25 @@ const PastLectures: React.FC = () => {
           ))}
         </div>
 
-        {/* Explore Text */}
-        <div className="w-full flex justify-center">
-          <div className="relative">
-            <img
-              src="/vector2.png"
-              alt="Explore"
-              className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] h-auto object-contain transition-transform duration-300 cursor-pointer hover:scale-105"
-            />
-            <span
-              className="absolute inset-0 flex items-center justify-center text-green-300 text-lg sm:text-xl md:text-2xl font-extrabold font-blackops thin-glow"
-              style={{
-                WebkitTextStroke: '0.2px rgba(0, 100, 0)', // Thin dark-green stroke
-              }}
-            >
-              Explore
-            </span>
-          </div>
-        </div>
+        {/* Explore Button */}
+        <button
+          onClick={handleExploreClick}
+          className="group relative flex items-center justify-center transition-transform duration-300 hover:scale-105 focus:outline-none"
+        >
+          <img
+            src="/vector2.png"
+            alt="Explore"
+            className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] h-auto object-contain"
+          />
+          <span
+            className="absolute inset-0 flex items-center justify-center text-green-300 text-lg sm:text-xl md:text-2xl font-extrabold font-blackops thin-glow group-hover:text-green-200"
+            style={{
+              WebkitTextStroke: '0.2px rgba(0, 100, 0)',
+            }}
+          >
+            Explore
+          </span>
+        </button>
       </div>
     </div>
   );
