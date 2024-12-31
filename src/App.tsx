@@ -26,8 +26,10 @@ const App: React.FC = () => {
           <Workshops />
           <PastLectures />
         </div>
-        <Footer />
-      </div>
+        <footer className="z-20">
+          <Footer />
+        </footer>
+              </div>
     </Router>
   );
 };
