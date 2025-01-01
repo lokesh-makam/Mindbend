@@ -10,22 +10,27 @@ import InspiringWords from './components/InspiringWords';
 function App() {
   return (
     <Router>
-      <div className="hero-bg">
+      <div className="app-container">
+        {/* <CanvasCursor />  */} {/*effet-1*/}
+        <FluidCursor/>  {/*effet-2*/}
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />} />
-        </Routes>
-      </div>
-
-      <div className="fixed-bg">
+        <div className="hero-bg">
+          <Routes>
+            <Route path="/" element={<Hero />} />
+          </Routes>
+        </div>
+        <div className="content">
           <AboutMB />
           <InspiringWords/>
           <Workshops />
           <PastLectures />
-      </div>
-      <Footer/>
+        </div>
+        <footer className="z-20">
+          <Footer />
+        </footer>
+              </div>
     </Router>
   );
-}
+};
 
 export default App;

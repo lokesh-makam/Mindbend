@@ -39,8 +39,19 @@ const PastLectures: React.FC = () => {
         </div>
 
         {/* Grid of Boxes */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 mb-12 sm:mb-16 w-full">
-          {boxImages.map((image, index) => (
+        <div
+  className="
+    grid 
+    grid-cols-1 
+    [@media(min-width:400px)]:grid-cols-2 
+    [@media(min-width:900px)]:grid-cols-4 
+    gap-4 
+    sm:gap-8 
+    mb-12 
+    sm:mb-16 
+    w-full
+  "
+>          {boxImages.map((image, index) => (
             <div
               key={index}
               className="relative aspect-square bg-contain bg-no-repeat bg-center transition-transform duration-300 cursor-pointer hover:scale-105"
