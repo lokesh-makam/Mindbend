@@ -7,6 +7,7 @@ import PastLectures from './components/PastLectures';
 import Workshops from './components/Workshop';
 import Footer from './components/Footer';
 import InspiringWords from './components/InspiringWords';
+import FluidCursor from './components/edil-ozi/fluid-cursor';
 function App() {
   return (
     <Router>
