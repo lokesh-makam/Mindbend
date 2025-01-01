@@ -6,6 +6,7 @@ import AboutMB from './components/AboutMB';
 import PastLectures from './components/PastLectures';
 import Workshops from './components/Workshop';
 import Footer from './components/Footer';
+import InspiringWords from './components/InspiringWords';
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
 
       <div className="fixed-bg">
           <AboutMB />
+          <InspiringWords/>
           <Workshops />
           <PastLectures />
       </div>
