@@ -1,4 +1,5 @@
 import React from 'react';
+import '@fontsource/orbitron/500.css';
 
 const InspiringWords: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ const InspiringWords: React.FC = () => {
 
       {/* Content Container */}
       <div className="relative z-10 w-full max-w-6xl mx-auto space-y-8 sm:space-y-12 md:space-y-16 text-white px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-blackops text-center mb-4 sm:mb-6 md:mb-8 text-cyan-300 thin-glow">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-orbi font-medium text-center mb-4 sm:mb-6 md:mb-8 text-cyan-300 thin-glow">
           INSPIRING WORDS FOR MINDBEND
         </h2>
 
@@ -30,7 +31,7 @@ const InspiringWords: React.FC = () => {
                 "In today's rapidly advancing world, acquiring practical skills is essential for enhancing productivity and achieving success. India's emergence as the third-largest startup hub globally reflects the strength of our talented youth and increasing access to technology. I extend my best wishes for the success of <span className="text-cyan-300">Mindbend 2024</span> at SVNIT, Surat, under the theme "<span className="text-cyan-300">TechVolution</span>: Navigating the Evolution of Innovation," which will further contribute to the progress of our nation."
               </p>
               <div className="space-y-1">
-                <h3 className="text-xl sm:text-2xl font-blackops text-green-300">- Shri Bhupendrabhai Patel</h3>
+                <h3 className="text-xl sm:text-2xl font-bruno text-green-300">- Shri Bhupendrabhai Patel</h3>
                 <p className="text-base sm:text-lg font-bruno text-cyan-300">Honourable Chief Minister of Gujarat</p>
               </div>
             </div>
@@ -52,29 +53,13 @@ const InspiringWords: React.FC = () => {
                 "Our students have been successfully organizing <span className="text-cyan-300">MINDBEND, Gujarat's largest techno-managerial fest</span>, which has grown far beyond our expectations. The <span className="text-cyan-300">participation of international attendees</span>, including from Russia last year, marks a great success for the event and a proud achievement for the college, showcasing its global reach and excellence."
               </p>
               <div className="space-y-1">
-                <h3 className="text-xl sm:text-2xl font-blackops text-green-300">- Prof. (Dr.) Anupam Shukla</h3>
+                <h3 className="text-xl sm:text-2xl font-bruno text-green-300">- Prof. (Dr.) Anupam Shukla</h3>
                 <p className="text-base sm:text-lg font-bruno text-cyan-300">Director, SVNIT Surat</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Black+Ops+One&display=swap');
-        
-        .font-bruno {
-          font-family: 'Bruno Ace SC', cursive;
-        }
-
-        .font-blackops {
-          font-family: 'Black Ops One', cursive;
-        }
-        
-        .thin-glow {
-          text-shadow: 0 0 2px currentColor, 0 0 4px currentColor;
-        }
-      `}</style>
     </div>
   );
 };

@@ -28,7 +28,7 @@ const Workshops: React.FC = () => {
               className="w-full max-w-[200px] sm:max-w-[300px] md:max-w-[400px] h-auto object-contain"
             />
             <span
-              className="absolute inset-0 flex items-center justify-center text-green-300 text-xl sm:text-2xl md:text-3xl font-extrabold font-blackops thin-glow"
+              className="absolute inset-0 flex items-center justify-center text-green-300 text-xl sm:text-2xl md:text-3xl font-extrabold font-orbi thin-glow"
               style={{
                 WebkitTextStroke: '0.2px rgba(0, 100, 0)',
               }}
@@ -73,7 +73,7 @@ const Workshops: React.FC = () => {
             className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] h-auto object-contain"
           />
           <span
-            className="absolute inset-0 flex items-center justify-center text-green-300 text-lg sm:text-xl md:text-2xl font-extrabold font-blackops thin-glow group-hover:text-green-200"
+            className="absolute inset-0 flex items-center justify-center text-green-300 text-lg sm:text-xl md:text-2xl font-extrabold font-orbi thin-glow group-hover:text-green-200"
             style={{
               WebkitTextStroke: '0.2px rgba(0, 100, 0)',
             }}

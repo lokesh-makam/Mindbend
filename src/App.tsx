@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -7,27 +6,28 @@ import PastLectures from './components/PastLectures';
 import Workshops from './components/Workshop';
 import Footer from './components/Footer';
 import InspiringWords from './components/InspiringWords';
+import FluidCursor from './components/edil-ozi/fluid-cursor';
 function App() {
   return (
     <Router>
       <div className="app-container">
-        {/* <CanvasCursor />  */} {/*effet-1*/}
+        
         <Navbar />
+        <FluidCursor/>
         <div className="hero-bg">
           <Routes>
             <Route path="/" element={<Hero />} />
           </Routes>
         </div>
-        <div className="fixed-bg">
           <AboutMB />
           <InspiringWords/>
           <Workshops />
           <PastLectures />
-        </div>
         <footer className="z-20">
           <Footer />
         </footer>
-              </div>
+        
+      </div>
     </Router>
   );
 };
