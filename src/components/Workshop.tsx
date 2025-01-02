@@ -2,10 +2,10 @@ import React from 'react';
 
 const Workshops: React.FC = () => {
   const boxImages = [
-    '/workshop_1.png',
-    '/workshop_2.png',
-    '/workshop_3.png',
-    '/workshop_4.png',
+    '/workshop_1.svg',
+    '/workshop_2.svg',
+    '/workshop_3.svg',
+    '/workshop_4.svg',
   ];
 
   const handleExploreClick = () => {

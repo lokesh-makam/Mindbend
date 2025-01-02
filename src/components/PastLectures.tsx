@@ -2,10 +2,10 @@ import React from 'react';
 
 const PastLectures: React.FC = () => {
   const boxImages = [
-    '/past_lec1.png',
-    '/past_lec2.png',
-    '/past_lec3.png',
-    '/past_lec4.png',
+    '/past_lec1.svg',
+    '/past_lec2.svg',
+    '/past_lec3.svg',
+    '/past_lec4.svg',
   ];
 
   const handleExploreClick = () => {
@@ -23,7 +23,7 @@ const PastLectures: React.FC = () => {
         <div className="mb-12 sm:mb-16 w-full flex justify-center">
           <div className="relative">
             <img
-              src="/vector1.png"
+              src="/vector_1.svg"
               alt="Past Lectures"
               className="w-full max-w-[200px] sm:max-w-[300px] md:max-w-[400px] h-auto object-contain"
             />
