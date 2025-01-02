@@ -23,7 +23,7 @@ const PastLectures: React.FC = () => {
         <div className="mb-12 sm:mb-16 w-full flex justify-center">
           <div className="relative">
             <img
-              src="/vector_1.svg"
+              src="/vector1.svg"
               alt="Past Lectures"
               className="w-full max-w-[200px] sm:max-w-[300px] md:max-w-[400px] h-auto object-contain"
             />
@@ -68,7 +68,7 @@ const PastLectures: React.FC = () => {
           className="group relative flex items-center justify-center transition-transform duration-300 hover:scale-105 focus:outline-none"
         >
           <img
-            src="/vector2.png"
+            src="/vector2.svg"
             alt="Explore"
             className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] h-auto object-contain"
           />
